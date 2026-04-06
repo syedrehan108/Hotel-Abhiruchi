@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Full Menu - Abhiruchi</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    background: #0b0c10;
+    color: #fff;
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.header h1 {
+    font-family: 'Playfair Display', serif;
+    color: #d4af37;
+}
+
+/* MENU */
+.menu-container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* CATEGORY */
+.category {
+    margin-bottom: 40px;
+}
+
+.category h2 {
+    color: #d4af37;
+    border-bottom: 1px solid rgba(212,175,55,0.3);
+    padding-bottom: 10px;
+}
+
+/* ITEMS */
+.item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px dashed rgba(255,255,255,0.1);
+}
+
+.item span {
+    color: #d4af37;
+}
+
+/* BACK BUTTON */
+.back {
+    text-align: center;
+    margin: 40px;
+}
+
+.back a {
+    text-decoration: none;
+    border: 1px solid #d4af37;
+    padding: 10px 25px;
+    border-radius: 30px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.back a:hover {
+    background: #d4af37;
+    color: #000;
+}
+
+/* SCROLL ANIMATION */
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* STAGGER EFFECT */
+.item {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.item.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+html {
+    scroll-behavior: smooth;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <h1>Our Full Menu</h1>
+</div>
+
+<div class="menu-container">
+
+<!-- MOCKTAILS -->
+<div class="category reveal">
+<h2>Mocktails</h2>
+<div class="item"><p>Fruit Punch</p><span>₹200</span></div>
+<div class="item"><p>Strawberry Lemonade</p><span>₹200</span></div>
+<div class="item"><p>Blue Lagoon</p><span>₹200</span></div>
+<div class="item"><p>Virgin Mojito</p><span>₹200</span></div>
+<div class="item"><p>Pineapple Punch</p><span>₹200</span></div>
+</div>
+
+<!-- SMOOTHIES -->
+<div class="category reveal">
+<h2>Smoothies & Shakes</h2>
+<div class="item"><p>Vanilla Milkshake</p><span>₹200</span></div>
+<div class="item"><p>Strawberry Milkshake</p><span>₹200</span></div>
+<div class="item"><p>Chocolate Milkshake</p><span>₹200</span></div>
+<div class="item"><p>Oreo Milkshake</p><span>₹200</span></div>
+</div>
+
+<!-- SOUPS -->
+<div class="category reveal">
+<h2>Soups</h2>
+<div class="item"><p>Lemon Coriander Soup</p><span>₹130</span></div>
+<div class="item"><p>Hot & Sour Soup</p><span>₹120</span></div>
+<div class="item"><p>Veg Manchow Soup</p><span>₹130</span></div>
+<div class="item"><p>Chicken Soup</p><span>₹160</span></div>
+</div>
+
+<!-- BIRYANI -->
+<div class="category reveal">
+<h2>Biryani</h2>
+<div class="item"><p>Chicken Biryani</p><span>₹190</span></div>
+<div class="item"><p>Mutton Biryani</p><span>₹290</span></div>
+<div class="item"><p>Veg Biryani</p><span>₹240</span></div>
+<div class="item"><p>Egg Biryani</p><span>₹150</span></div>
+</div>
+
+<!-- CHINESE -->
+<div class="category reveal">
+<h2>Chinese</h2>
+<div class="item"><p>Veg Noodles</p><span>₹230</span></div>
+<div class="item"><p>Chicken Noodles</p><span>₹280</span></div>
+<div class="item"><p>Veg Fried Rice</p><span>₹240</span></div>
+<div class="item"><p>Chicken Fried Rice</p><span>₹280</span></div>
+<div class="item"><p>Manchurian</p><span>₹250</span></div>
+</div>
+
+<!-- STARTERS -->
+<div class="category reveal">
+<h2>Starters</h2>
+<div class="item"><p>Chicken Kebab</p><span>₹350</span></div>
+<div class="item"><p>Paneer Tikka</p><span>₹300</span></div>
+<div class="item"><p>Chilli Chicken</p><span>₹350</span></div>
+<div class="item"><p>Gobi Manchurian</p><span>₹200</span></div>
+</div>
+
+<!-- CURRIES -->
+<div class="category reveal">
+<h2>Curries</h2>
+<div class="item"><p>Butter Chicken</p><span>₹400</span></div>
+<div class="item"><p>Kadai Chicken</p><span>₹450</span></div>
+<div class="item"><p>Chicken Masala</p><span>₹400</span></div>
+<div class="item"><p>Paneer Butter Masala</p><span>₹350</span></div>
+<div class="item"><p>Kadai Paneer</p><span>₹350</span></div>
+</div>
+
+<!-- ROTI -->
+<div class="category reveal">
+<h2>Roti & Bread</h2>
+<div class="item"><p>Tandoori Roti</p><span>₹35</span></div>
+<div class="item"><p>Butter Roti</p><span>₹40</span></div>
+<div class="item"><p>Butter Naan</p><span>₹50</span></div>
+<div class="item"><p>Garlic Naan</p><span>₹70</span></div>
+</div>
+
+<!-- BEVERAGES -->
+<div class="category reveal">
+<h2>Beverages</h2>
+<div class="item"><p>Fresh Juice</p><span>₹120</span></div>
+<div class="item"><p>Milkshake</p><span>₹200</span></div>
+<div class="item"><p>Soft Drinks</p><span>₹50</span></div>
+</div>
+
+</div>
+
+<div class="back">
+    <a href="index.html">← Back to Home</a>
+</div>
+
+<script>
+// CATEGORY REVEAL
+function revealSections() {
+    const reveals = document.querySelectorAll(".reveal");
+
+    reveals.forEach(el => {
+        const windowHeight = window.innerHeight;
+        const elementTop = el.getBoundingClientRect().top;
+
+        if (elementTop < windowHeight - 100) {
+            el.classList.add("active");
+        }
+    });
+}
+
+// ITEM STAGGER ANIMATION
+function revealItems() {
+    const items = document.querySelectorAll(".item");
+
+    items.forEach((item, index) => {
+        const windowHeight = window.innerHeight;
+        const elementTop = item.getBoundingClientRect().top;
+
+        if (elementTop < windowHeight - 50) {
+            setTimeout(() => {
+                item.classList.add("show");
+            }, index * 50); // delay for stagger effect
+        }
+    });
+}
+
+window.addEventListener("scroll", () => {
+    revealSections();
+    revealItems();
+});
+</script>
+</body>
+</html>

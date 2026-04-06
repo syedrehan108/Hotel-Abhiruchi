@@ -1,0 +1,82 @@
+/* ORDER SECTION */
+
+.order-now {
+    background: linear-gradient(180deg, #111, #000);
+    padding: 90px 20px;
+    text-align: center;
+    border-top: 2px solid #d4af37;
+    border-bottom: 2px solid #d4af37;
+}
+
+/* ORDER BUTTON CONTAINER */
+
+.order-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+/* CARD STYLE */
+
+.order-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 240px;
+    height: 80px;
+
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 15px;
+
+    text-decoration: none;
+    color: white;
+
+    transition: 0.35s ease;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* SWIGGY CARD */
+
+.swiggy {
+    background: #fc8019;
+}
+
+.swiggy:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(252, 128, 25, 0.6);
+}
+
+/* ZOMATO CARD */
+
+.zomato {
+    background: #e23744;
+}
+
+.zomato:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(226, 55, 68, 0.6);
+}
+
+/* Reveal animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.9s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Delay classes for one-by-one effect */
+.delay-1 { transition-delay: 0.15s; }
+.delay-2 { transition-delay: 0.30s; }
+.delay-3 { transition-delay: 0.45s; }
+.delay-4 { transition-delay: 0.60s; }
+.delay-5 { transition-delay: 0.75s; }
+.delay-6 { transition-delay: 0.90s; }
